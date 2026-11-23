@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HIMASTI ITEBIS PGRI Dewantara</title>
+<meta name="color-scheme" content="light">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="adminbar" class="hidden bg-slate-900 text-white text-sm px-4 py-2 items-center justify-between gap-2">
+ <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>Mode admin aktif</span>
+ <span class="flex gap-2"><button data-act="panel" class="gold-g text-slate-900 font-semibold px-3 py-1 rounded">Buka Dashboard</button><button data-act="logout" class="border border-white/40 px-3 py-1 rounded">Keluar</button></span>
+</div>
+<div id="warn" class="hidden bg-red-50 text-red-700 text-xs px-4 py-2">Penyimpanan browser penuh atau diblokir, perubahan belum tersimpan permanen. Gunakan foto yang lebih kecil.</div>
+
+<header class="sticky top-0 z-40 glass text-white shadow-lg border-b-2 border-amber-300/80" style="background:rgba(10,77,154,.85)">
+ <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="#beranda" class="flex items-center gap-3"><img src="assets/logo.png" alt="Logo HIMASTI ITEBIS PGRI Dewantara" width="44" height="44" class="w-11 h-11 rounded-full bg-white object-cover ring-2 ring-amber-300 ring-offset-2 ring-offset-[#0A4D9A]"><span class="font-bold">HIMASTI Dewantara</span></a>
+  <nav class="hidden lg:flex items-center gap-5 text-sm" id="nav"></nav>
+  <button data-act="burger" class="lg:hidden" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+ </div>
+ <div id="mnav" class="hidden lg:hidden px-4 pb-4 flex-col gap-3 text-sm"></div>
+</header>
+
+<section id="beranda" class="navy-g text-white"><div class="rv in max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-12 gap-8 items-center">
+ <div class="md:col-span-8">
+  <div class="st text-amber-300 font-semibold mb-3">HIMASTI · ITEBIS PGRI Dewantara</div>
+  <h1 class="st text-3xl md:text-5xl font-extrabold leading-tight" style="--d:100ms">Himpunan Mahasiswa Sistem dan Teknologi Informasi</h1>
+  <p class="st mt-5 text-blue-100 max-w-xl" style="--d:200ms">Wadah aspirasi, inovasi teknologi, dan solidaritas mahasiswa STI di bidang akademik, teknologi, dan kemahasiswaan.</p>
+  <div class="st mt-8 flex flex-wrap gap-3" style="--d:300ms"><a href="#pengurus" class="card gold-g text-slate-900 font-semibold px-5 py-3 rounded">Struktur Pengurus</a><a href="#proker" class="card border-2 border-white/80 px-5 py-3 rounded font-semibold">Program Kerja</a></div>
+ </div>
+ <div id="stats" class="md:col-span-4 grid grid-cols-3 md:grid-cols-1 gap-3"></div>
+</div></section>
+
+<section class="max-w-6xl mx-auto px-4 py-16 rv"><div class="st mb-8"><div class="text-[#0A93D4] text-sm font-semibold uppercase tracking-wide">Pimpinan</div><h2 class="text-2xl md:text-3xl font-bold text-[#0A4D9A] mt-1">Ketua & Wakil Ketua Himpunan</h2><div class="h-1 w-14 rounded gold-g mt-3"></div></div>
+ <div id="leaders" class="grid md:grid-cols-2 gap-6"></div><div id="sambutan" class="st mt-6" style="--d:300ms"></div></section>
+
+<section id="visi" class="bg-white/60 glass border-y"><div class="max-w-6xl mx-auto px-4 py-16 rv"><div class="st mb-8"><div class="text-[#0A93D4] text-sm font-semibold uppercase tracking-wide">Arah organisasi</div><h2 class="text-2xl md:text-3xl font-bold text-[#0A4D9A] mt-1">Visi & Misi</h2><div class="h-1 w-14 rounded gold-g mt-3"></div></div><div id="vm" class="grid md:grid-cols-2 gap-6"></div></div></section>
+
+<section id="pengurus" class="max-w-6xl mx-auto px-4 py-16 rv"><div class="st mb-8"><div class="text-[#0A93D4] text-sm font-semibold uppercase tracking-wide">Struktur</div><h2 class="text-2xl md:text-3xl font-bold text-[#0A4D9A] mt-1">Departemen & Pengurus</h2><div class="h-1 w-14 rounded gold-g mt-3"></div></div>
+ <div class="mb-6 max-w-full overflow-x-auto"><div id="tabs" class="relative inline-flex bg-white/70 glass border rounded-full p-1 shadow-sm"></div></div>
+ <div id="grid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div></section>
+
+<section id="proker" class="bg-white/60 glass border-y"><div class="max-w-6xl mx-auto px-4 py-16 rv"><div class="st mb-8"><div class="text-[#0A93D4] text-sm font-semibold uppercase tracking-wide">Agenda</div><h2 class="text-2xl md:text-3xl font-bold text-[#0A4D9A] mt-1">Program Kerja</h2><div class="h-1 w-14 rounded gold-g mt-3"></div></div><div id="prokerList" class="grid md:grid-cols-3 gap-4"></div></div></section>
+
+<section id="berita" class="max-w-6xl mx-auto px-4 py-16 rv"><div class="st mb-8"><div class="text-[#0A93D4] text-sm font-semibold uppercase tracking-wide">Media Kominfo</div><h2 class="text-2xl md:text-3xl font-bold text-[#0A4D9A] mt-1">Berita & Pengumuman</h2><div class="h-1 w-14 rounded gold-g mt-3"></div></div><div id="beritaList" class="grid md:grid-cols-2 gap-4"></div></section>
+
+<footer id="kontak" class="navy-g text-white border-t-4 border-amber-300"><div id="foot" class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8 text-sm"></div><div class="border-t border-white/20 text-center text-xs py-4 text-blue-100">© 2026 HIMASTI ITEBIS PGRI Dewantara. Dikelola oleh Kominfo & Media.</div></footer>
+<div id="modal"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
